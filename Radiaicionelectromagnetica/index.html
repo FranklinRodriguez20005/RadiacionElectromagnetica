@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiación Electromagnética</title>
+    <!-- Agregamos los estilos de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Agregamos nuestro archivo de estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionales */
+        /* Estilo para el fondo animado */
+        body {
+            background-image: url('img/background.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: slide 20s linear infinite; /* Animación de deslizamiento */
+        }
+
+        /* Animación de deslizamiento */
+        @keyframes slide {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+
+        /* Estilo para la animación de texto */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fade-in-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Radiación Electromagnética</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#content">Contenido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#applications">Aplicaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resources">Recursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Encabezado principal -->
+    <header class="header">
+        <div class="container">
+            <h1>Radiación Electromagnética</h1>
+            <h2>Explorando el mundo invisible</h2>
+        </div>
+    </header>
+
+    <!-- Sección Acerca de -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="fade-in-up">Acerca de</h2>
+            <p class="fade-in-up">La radiación electromagnética es un fenómeno fundamental en el universo. Consiste en la propagación de energía a través de ondas electromagnéticas, que se extienden en el espacio y transportan energía electromagnética. Desde las ondas de radio hasta los rayos gamma, la radiación electromagnética está presente en diversas formas en nuestra vida cotidiana y tiene numerosas aplicaciones en campos como las comunicaciones, la medicina, la investigación científica y más.</p>
+            <h3 class="fade-in-up">Recursos adicionales</h3>
+            <ul class="fade-in-up">
+                <li><a href="#">Libro recomendado: "Introducción a la Radiación Electromagnética"</a></li>
+                <li><a href="#">Video: "Aplicaciones de la Radiación Electromagnética en la Vida Cotidiana"</a></li>
+                <li><a href="#">Artículo: "Avances Recientes en Investigación sobre Radiación Electromagnética"</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de contenido -->
+    <section id="content" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="content-card">
+                        <h3 class="fade-in-up">Tipos de Radiación</h3>
+                        <p class="fade-in-up">La radiación electromagnética se clasifica en diferentes tipos según su longitud de onda y frecuencia. Estos incluyen:</p>
+                        <ul class="fade-in-up">
+                            <li><strong>Ondas de Radio:</strong> Utilizadas en la radiodifusión y las comunicaciones inalámbricas.</li>
+                            <li><strong>Microondas:</strong> Ampliamente utilizadas en la tecnología de radar, comunicaciones satelitales, cocinas de microondas y más.</li>
+                            <li><strong>Luz Visible:</strong> La parte del espectro electromagnético que puede ser percibida por el ojo humano.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content-card">
+                        <h3 class="fade-in-up">Aplicaciones</h3>
+                        <p class="fade-in-up">La radiación electromagnética tiene una amplia gama de aplicaciones en diversos campos. Algunas de las aplicaciones más comunes incluyen:</p>
+                        <ul class="fade-in-up">
+                            <li><strong>Comunicaciones:</strong> Televisión, radio, telefonía móvil y redes inalámbricas.</li>
+                            <li><strong>Medicina:</strong> Resonancia magnética, radioterapia, diagnóstico por imágenes y monitoreo médico.</li>
+                            <li><strong>Industria:</strong> Soldadura, secado por microondas, inspección de calidad y tratamiento térmico.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content-card">
+                        <h3 class="fade-in-up">Descubrimientos Importantes</h3>
+                        <p class="fade-in-up">La historia de la radiación electromagnética está llena de descubrimientos importantes que han revolucionado nuestra comprensión del mundo y han llevado a avances tecnológicos significativos. Algunos de los descubrimientos más destacados incluyen:</p>
+                        <ul class="fade-in-up">
+                            <li>Descubrimiento de las ondas de radio por Heinrich Hertz en 1888.</li>
+                            <li>Descubrimiento de los rayos X por Wilhelm Conrad Röntgen en 1895.</li>
+                            <li>Desarrollo de la teoría de la relatividad por Albert Einstein en 1905.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de imágenes -->
+    <section id="images" class="images-section">
+        <div class="container">
+            <h2>Imágenes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/imagen1.png" alt="Imagen 1" class="animated-img fade-in-up">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/imagen2.png" alt="Imagen 2" class="animated-img fade-in-up">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/imagen3.png" alt="Imagen 3" class="animated-img fade-in-up">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de aplicaciones -->
+    <section id="applications" class="applications-section">
+        <div class="container">
+            <h2>Aplicaciones de la Radiación Electromagnética</h2>
+            <p>La radiación electromagnética tiene una amplia variedad de aplicaciones en nuestra vida cotidiana y en diversos campos. Aquí hay algunas áreas donde se utiliza:</p>
+            <ul>
+                <li>Telecomunicaciones</li>
+                <li>Medicina</li>
+                <li>Industria</li>
+                <li>Ciencia y Investigación</li>
+                <li>Seguridad</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de recursos -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <h2>Recursos</h2>
+            <p>Encuentra más información sobre radiación electromagnética en estos recursos:</p>
+            <ul>
+                <li><a href="#">Libros recomendados</a></li>
+                <li><a href="#">Artículos científicos</a></li>
+                <li><a href="#">Videos educativos</a></li>
+                <li><a href="#">Sitios web especializados</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span class="text-muted">© 2024 Radiación Electromagnética</span>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Función para activar la animación de desplazamiento hacia arriba
+        $(document).ready(function() {
+            $('.fade-in-up').each(function(i) {
+                var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if (bottom_of_window > bottom_of_object) {
+                    $(this).addClass('active');
+                }
+            });
+            $(window).scroll(function() {
+                $('.fade-in-up').each(function(i) {
+                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).addClass('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

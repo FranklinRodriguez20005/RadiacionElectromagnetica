@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiación Electromagnética</title>
+    <!-- Agregamos los estilos de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Agregamos nuestro archivo de estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionales */
+        /* Estilo para el fondo del encabezado */
+        .header {
+            background-image: url(img/imagen4.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Superposición semi-transparente */
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Color y opacidad de la superposición */
+        }
+
+        /* Estilo para los títulos del encabezado */
+        .header h1, .header h2 {
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Radiación Electromagnética</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#content">Contenido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Encabezado principal -->
+    <header class="header">
+        <div class="container">
+            <h1>Radiación Electromagnética</h1>
+            <h2>Explorando el mundo invisible</h2>
+        </div>
+    </header>
+
+    <!-- Sección Acerca de -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Acerca de</h2>
+            <p>La radiación electromagnética es un fenómeno fundamental en el universo. Consiste en la propagación de energía a través de ondas electromagnéticas, que se extienden en el espacio y transportan energía electromagnética. Desde las ondas de radio hasta los rayos gamma, la radiación electromagnética está presente en diversas formas en nuestra vida cotidiana y tiene numerosas aplicaciones en campos como las comunicaciones, la medicina, la investigación científica y más.</p>
+        </div>
+    </section>
+
+    <!-- Sección de contenido -->
+    <section id="content" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="content-card">
+                        <h3>Tipos de Radiación</h3>
+                        <p>La radiación electromagnética se clasifica en diferentes tipos según su longitud de onda y frecuencia. Estos incluyen:</p>
+                        <ul>
+                            <li><strong>Ondas de Radio:</strong> Utilizadas en la radiodifusión y las comunicaciones inalámbricas.</li>
+                            <li><strong>Microondas:</strong> Ampliamente utilizadas en la tecnología de radar, comunicaciones satelitales, cocinas de microondas y más.</li>
+                            <li><strong>Luz Visible:</strong> La parte del espectro electromagnético que puede ser percibida por el ojo humano.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content-card">
+                        <h3>Aplicaciones</h3>
+                        <p>La radiación electromagnética tiene una amplia gama de aplicaciones en diversos campos. Algunas de las aplicaciones más comunes incluyen:</p>
+                        <ul>
+                            <li><strong>Comunicaciones:</strong> Televisión, radio, telefonía móvil y redes inalámbricas.</li>
+                            <li><strong>Medicina:</strong> Resonancia magnética, radioterapia, diagnóstico por imágenes y monitoreo médico.</li>
+                            <li><strong>Industria:</strong> Soldadura, secado por microondas, inspección de calidad y tratamiento térmico.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content-card">
+                        <h3>Descubrimientos Importantes</h3>
+                        <p>La historia de la radiación electromagnética está llena de descubrimientos importantes que han revolucionado nuestra comprensión del mundo y han llevado a avances tecnológicos significativos. Algunos de los descubrimientos más destacados incluyen:</p>
+                        <ul>
+                            <li>Descubrimiento de las ondas de radio por Heinrich Hertz en 1888.</li>
+                            <li>Descubrimiento de los rayos X por Wilhelm Conrad Röntgen en 1895.</li>
+                            <li>Desarrollo de la teoría de la relatividad por Albert Einstein en 1905.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span class="text-muted">© 2024 Radiación Electromagnética</span>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
